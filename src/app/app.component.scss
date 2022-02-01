@@ -1,0 +1,103 @@
+.main-container {
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+    border: solid 1px rgb(179, 163, 127);
+    background-color: rgb(255, 243, 216);
+}
+
+.div-task {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-report {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-div-task {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.main-div-report {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.h1 {
+    background-color: white;
+    width: 100%;
+    margin: 40px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav {
+    float: left;
+    margin-left: 20px;
+}
+
+button {
+    margin: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        width: 100%;
+        margin: 2% auto;
+        text-align: center;
+        border: none;
+        background-color: white;
+    }
+
+    .div-container {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display:block;
+    }
+    
+    .main-div {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin: 20px auto;
+        border: solid 1px rgb(179, 163, 127);
+        background-color: rgb(255, 243, 216);
+    }
+
+    .main-div-report {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        margin: 20px auto;
+        border: solid 1px rgb(179, 163, 127);
+        background-color: rgb(255, 243, 216);
+    }
+    
+    .h1 {
+        border: solid 1px rgb(179, 163, 127);
+        background-color: rgb(255, 243, 216);
+        width: 100%;
+        margin: 40px 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

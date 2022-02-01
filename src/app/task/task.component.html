@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="task-data-container">
+        <span>Tâche numéro {{taskId}}</span>
+        <div>
+            <button (click)="deleteTask()">Supprimer</button>
+        </div>
+    </div>
+    <p [hidden]="isDone" align="right">
+        <button (click)="switchIsDone()">Fait</button>
+    </p>
+    <div class="task-data-container">
+        <p [hidden]="!isDone">La tâche est terminée.</p>
+        <button [hidden]="!isDone" (click)="switchIsDone()">A faire</button>
+    </div>
+    <div [hidden]="confirmed">
+        <input type="text" [(ngModel)]="task">
+    </div>
+    <div [hidden]="!confirmed">
+        <span *ngIf="task">{{task}}</span>
+    </div>
+    <button [hidden]="confirmed" (click)="switchConfirm()">Confirmer</button>
+    <button [hidden]="!confirmed" [disabled]="isDone" (click)="switchConfirm()">Modifier</button>
+</div>

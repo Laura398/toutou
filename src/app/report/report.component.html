@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="report-data-container">
+        <span>Rapport numéro {{reportId}}</span>
+    </div>
+    <div [hidden]="confirmed">
+        <!-- <input type="text" [(ngModel)]="report"> -->
+        <textarea rows = "5" cols = "60" name = "description" [(ngModel)]="report"></textarea>
+    </div>
+    <div [hidden]="!confirmed">
+        <span *ngIf="report">{{report}}</span>
+    </div>
+    <div>
+        <button [hidden]="confirmed" (click)="switchConfirm()">Confirmer</button>
+        <button [hidden]="!confirmed" [disabled]="isDone" (click)="switchConfirm()">Modifier</button>
+        <button (click)="deleteReport()">Supprimer</button>
+    </div>
+</div>
